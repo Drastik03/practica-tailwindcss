@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper{
+        @apply w-[90&] mx-auto overflow-hidden max-w-screen-xl;
+    }
+    .icon{
+        background-image: url("../images/icon-hamburger.svg");
+        background-image: url("../images/icon-.svg");
+
+    }
+
+    .button{
+        @apply bg-Bright-Red text-Very-Pale-Red w-max py-4 px-12 rounded-full block p-1;
+    }
+
+    .footer-area{
+        grid-template-areas:
+        "form"
+        "navigation"
+        "social-media"
+        "logo"
+        "copy";
+    }
+    .footer-area-md{
+        grid-template-areas:
+        "logo           navigation  form"
+        "social-media   navigation  copy"
+        ;
+    }
+}
